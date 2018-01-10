@@ -6,13 +6,25 @@ import './styles/styles.scss';
 
 const ExpenseDashboard = () => (
     <div>
-        This is from my dashboard component
+        This is from my DASHBOARD component
     </div>
 );
 
 const AddExpense = () => (
     <div>
-        This is from my Add component
+        This is from my ADD component
+    </div>
+);
+
+const EditExpense = () => (
+    <div>
+        This is from my EDIT component
+    </div>
+);
+
+const HelpPage = () => (
+    <div>
+        This is from my HELP component
     </div>
 );
 
@@ -21,6 +33,8 @@ const routes = (
         <div>
             <Route path="/" component={ExpenseDashboard} exact={true}/>
             <Route path="/create" component={AddExpense} />
+            <Route path="/edit" component={EditExpense} />
+            <Route path="/help" component={HelpPage} />
         </div>
     </BrowserRouter>
 );
