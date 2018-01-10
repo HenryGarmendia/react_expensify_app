@@ -17,7 +17,14 @@ button:disabled {
     cursor: default;
 }
 
-.link {
+.is_active {
     color: gray;
+    font-weight: bold;
+    margin-right: $s_size;
+    margin-left: $s_size;
+}
+
+.link	{
+	color: gray;
     margin-right: $s_size;
 }
