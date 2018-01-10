@@ -16,3 +16,8 @@ button {
 button:disabled {
     cursor: default;
 }
+
+.link {
+    color: gray;
+    margin-right: $s_size;
+}
