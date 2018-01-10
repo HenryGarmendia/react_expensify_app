@@ -4,15 +4,24 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
-const ExpenseDashboardPage = () => (
+const ExpenseDashboard = () => (
     <div>
         This is from my dashboard component
     </div>
 );
 
+const AddExpense = () => (
+    <div>
+        This is from my Add component
+    </div>
+);
+
 const routes = (
     <BrowserRouter>
-        <Route path="/" component={ExpenseDashboardPage} />
+        <div>
+            <Route path="/" component={ExpenseDashboard} exact={true}/>
+            <Route path="/create" component={AddExpense} />
+        </div>
     </BrowserRouter>
 );
 
