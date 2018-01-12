@@ -37,3 +37,9 @@ console.log(`The book "${title}" was publish by ${publisher_name}.`);
 // ES6 Array Destructuring
 //
 
+const address = ['123 Main St', 'Dallas', 'Texas', '75243'];
+
+const [street_address, city_name, state, zip_code] = address;
+
+console.log(`You are in ${address[1]} ${address[2]}`);
+console.log(`Our mailing info is ${street_address} ${city_name} ${state} ${zip_code}`);
