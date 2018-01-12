@@ -43,3 +43,9 @@ const [street_address, city_name, state, zip_code] = address;
 
 console.log(`You are in ${address[1]} ${address[2]}`);
 console.log(`Our mailing info is ${street_address} ${city_name} ${state} ${zip_code}`);
+
+const item = ['Coffee (hot)', '$2.00', '$2.50', '$2.75'];
+
+const [coffee_hot, s_price, m_price, l_price] = item;
+
+console.log(`A medium ${coffee_hot} costs ${m_price}.`);
