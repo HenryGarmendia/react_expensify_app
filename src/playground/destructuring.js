@@ -15,3 +15,16 @@ console.log(`${name} is ${age} and he is from ${city}.`);
 if (temperature && city) {
     console.log(`is ${temperature} degrees in ${city}.`);
 }
+
+const book = {
+    title: 'Ego is the Enemy',
+    author: 'Ryan Holiday',
+    publisher: {
+        name: 'Penguin'
+    }
+};
+
+const { title } = book;
+const { name: publisher_name = 'Self-publish' } = book.publisher;
+
+console.log(`The book "${title}" was publish by ${publisher_name}.`);
