@@ -1,3 +1,7 @@
+//
+// ES6 Obj Destructuring
+//
+
 const person = {
     name: 'Henry',
     age: 37,
@@ -28,3 +32,8 @@ const { title } = book;
 const { name: publisher_name = 'Self-publish' } = book.publisher;
 
 console.log(`The book "${title}" was publish by ${publisher_name}.`);
+
+//
+// ES6 Array Destructuring
+//
+
