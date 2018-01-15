@@ -32,7 +32,13 @@ const editExpense = (id, updates) => ({
     id,
     updates
 });
+
 //SET_TEXT_FILTER
+const setTextFilter = (text = '') => ({
+    type: 'SET_TEXT_FILTER',
+    text
+});
+
 //SORT_BY_DATE
 //SORT_BY_AMOUNT
 //SET_START_DATE
@@ -78,6 +84,10 @@ const filterReducerDefaultState = {
 };
 const filterReducer = (state = filterReducerDefaultState, action) => {
     switch (action.type) {
+        case 'SET_TEXT_FILTER':
+            return {
+                text: action.text
+            };
         default:
             return state;
     }
@@ -95,11 +105,14 @@ store.subscribe(() => {
     console.log(store.getState());
 });
 
+//Store Dispatch Calls
 const expenseOne = store.dispatch(addExpense({ description: 'MacBook Pro', amount: 300000 }));
 const expenseTwo = store.dispatch(addExpense({ description: 'Coffee', amount: 300 }));
 
 store.dispatch(removeExpense({ id: expenseOne.expense.id }));
 store.dispatch(editExpense(expenseTwo.expense.id, { amount: 500 }));
+
+store.dispatch(setTextFilter('course'));
 
 const demoState = {
     expenses: [{
