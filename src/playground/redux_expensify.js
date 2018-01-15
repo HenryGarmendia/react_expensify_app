@@ -43,7 +43,8 @@ const expensesReducer = (state = expensesReducerDefaultState, action) => {
             ];
         case 'REMOVE_EXPENSE':
             return state.filter(({ id }) => {
-                return id !== action.id;
+                // if this function return true the item will be kep in the array, if return false it will be remove from the array
+                return id !== action.id; 
             });
         default:
             return state;
