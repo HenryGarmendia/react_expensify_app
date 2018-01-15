@@ -21,6 +21,10 @@ const addExpense = (
  });
 
 //REMOVE_EXPENSE
+const removeExpense = ({ id } = {}) => ({
+    type: 'REMOVE_EXPENSE',
+    id
+});
 //EDIT_EXPENSE
 //SET_TEXT_FILTER
 //SORT_BY_DATE
@@ -37,6 +41,10 @@ const expensesReducer = (state = expensesReducerDefaultState, action) => {
                 ...state,
                 action.expenses
             ];
+        case 'REMOVE_EXPENSE':
+            return state.filter(({ id }) => {
+                return id !== action.id;
+            });
         default:
             return state;
     }
@@ -70,6 +78,8 @@ store.subscribe(() => {
 
 const expenseOne = store.dispatch(addExpense({ description: 'MacBook Pro', amount: 300000 }));
 const expenseTwo = store.dispatch(addExpense({ description: 'Coffee', amount: 300 }));
+
+store.dispatch(removeExpense({ id: expenseOne.expenses.id }))
 
 const demoState = {
     expenses: [{
