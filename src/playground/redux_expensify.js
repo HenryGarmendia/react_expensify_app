@@ -11,7 +11,7 @@ const addExpense = (
     } = {}
 ) => ({ 
     type: 'ADD_EXPENSE',
-    expenses: {
+    expense: {
         id: uuid(),
         description,
         note,
@@ -25,7 +25,13 @@ const removeExpense = ({ id } = {}) => ({
     type: 'REMOVE_EXPENSE',
     id
 });
+
 //EDIT_EXPENSE
+const editExpense = (id, updates) => ({
+    type: 'EDIT_EXPENSE',
+    id,
+    updates
+});
 //SET_TEXT_FILTER
 //SORT_BY_DATE
 //SORT_BY_AMOUNT
@@ -39,12 +45,24 @@ const expensesReducer = (state = expensesReducerDefaultState, action) => {
         case 'ADD_EXPENSE':
             return [
                 ...state,
-                action.expenses
+                action.expense
             ];
         case 'REMOVE_EXPENSE':
             return state.filter(({ id }) => {
                 // if this function return true the item will be kep in the array, if return false it will be remove from the array
                 return id !== action.id; 
+            });
+        case 'EDIT_EXPENSE':
+            return state.map((expense) => {
+                if (expense.id === action.id) {
+                    // return a brand new object
+                    return {
+                        ...expense,
+                        ...action.updates
+                    };
+                } else {
+                    return expense;
+                }
             });
         default:
             return state;
@@ -80,7 +98,8 @@ store.subscribe(() => {
 const expenseOne = store.dispatch(addExpense({ description: 'MacBook Pro', amount: 300000 }));
 const expenseTwo = store.dispatch(addExpense({ description: 'Coffee', amount: 300 }));
 
-store.dispatch(removeExpense({ id: expenseOne.expenses.id }))
+store.dispatch(removeExpense({ id: expenseOne.expense.id }));
+store.dispatch(editExpense(expenseTwo.expense.id, { amount: 500 }));
 
 const demoState = {
     expenses: [{
