@@ -1,5 +1,5 @@
 import { createStore, combineReducers } from 'redux';
-import uuid from 'uuid''
+import uuid from 'uuid';
 
 //ADD_EXPENSE
 const addExpense = (
@@ -18,7 +18,7 @@ const addExpense = (
         amount,
         createAt
     }
- })
+ });
 
 //REMOVE_EXPENSE
 //EDIT_EXPENSE
@@ -32,6 +32,11 @@ const addExpense = (
 const expensesReducerDefaultState = [];
 const expensesReducer = (state = expensesReducerDefaultState, action) => {
     switch (action.type) {
+        case 'ADD_EXPENSE':
+            return [
+                ...state,
+                action.expenses
+            ];
         default:
             return state;
     }
@@ -59,7 +64,12 @@ const store = createStore(
     })
 );
 
-console.log(store.getState());
+store.subscribe(() => {
+    console.log(store.getState());
+});
+
+const expenseOne = store.dispatch(addExpense({ description: 'MacBook Pro', amount: 300000 }));
+const expenseTwo = store.dispatch(addExpense({ description: 'Coffee', amount: 300 }));
 
 const demoState = {
     expenses: [{
