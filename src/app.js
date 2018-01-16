@@ -11,12 +11,12 @@ import AppRouter from './routers/app_router';
 
 const store = configureStore();
 
-store.dispatch(addExpense({ description: 'Water bill' }));
-store.dispatch(addExpense({ description: 'Gas bill' }));
+store.dispatch(addExpense({ description: 'Water bill', amount: 45000}));
+store.dispatch(addExpense({ description: 'Gas bill', amount: 3500 }));
 store.dispatch(setTextFilter('water'));
 
 setTimeout(() => {
-    store.dispatch(setTextFilter('rent'));
+    store.dispatch(setTextFilter('bill'));
 }, 3000);
 
 const state = store.getState();
