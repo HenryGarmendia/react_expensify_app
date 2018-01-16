@@ -1,9 +1,9 @@
 import React from 'react';
 
-const CreateExpense = () => (
+const AddExpense = () => (
     <div>
         This is from ADD component...
     </div>
 );
 
-export default CreateExpense;
+export default AddExpense;
