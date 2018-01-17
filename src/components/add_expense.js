@@ -5,7 +5,11 @@ const AddExpense = () => (
     <div>
         This is from ADD component...
         <h1>Add Expense</h1>
-        <ExpenseForm />
+        <ExpenseForm 
+            onSubmit={(expense) => {
+                console.log(expense);
+            }}
+        />
     </div>
 );
 
