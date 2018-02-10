@@ -61,6 +61,6 @@ test('should not set amount if invalid input', () => {
 
 test('should call onSubmit prop for valid on submission', () => {
     const onSubmitSpy = jest.fn();
-    onSubmitSpy();
-    expect(onSubmitSpy).toHaveBeenCalled();
+    onSubmitSpy('Henry', 'San Francisco');
+    expect(onSubmitSpy).toHaveBeenCalledWith('Henry', 'San Francisco');
 });
