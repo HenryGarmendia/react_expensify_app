@@ -35,9 +35,8 @@ ShallowWrapper {
             type="text"
             value=""
           />
-          <withStyles(SingleDatePicker)
+          <SingleDatePicker
             anchorDirection="left"
-            block={false}
             customCloseIcon={null}
             customInputIcon={null}
             date={"1970-01-01T00:00:00.000Z"}
@@ -60,7 +59,6 @@ ShallowWrapper {
             monthFormat="MMMM YYYY"
             navNext={null}
             navPrev={null}
-            noBorder={false}
             numberOfMonths={1}
             onClose={[Function]}
             onDateChange={[Function]}
@@ -78,42 +76,37 @@ ShallowWrapper {
                 "dateIsUnavailable": [Function],
                 "enterKey": "Enter key",
                 "escape": "Escape key",
-                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                 "homeEnd": "Home and end keys",
-                "jumpToNextMonth": "Move forward to switch to the next month.",
-                "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                "jumpToNextMonth": "Move forward to switch to the next month",
+                "jumpToPrevMonth": "Move backward to switch to the previous month",
                 "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                 "keyboardShortcuts": "Keyboard Shortcuts",
                 "leftArrowRightArrow": "Right and left arrow keys",
-                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                "moveFocusByOneMonth": "Switch months.",
-                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                "openThisPanel": "Open this panel.",
+                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                "moveFocusByOneMonth": "Switch months",
+                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                "openThisPanel": "Open this panel",
                 "pageUpPageDown": "page up and page down keys",
                 "questionMark": "Question mark",
-                "returnFocusToInput": "Return to the date input field.",
-                "selectFocusedDate": "Select the date in focus.",
-                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                "returnFocusToInput": "Return to the date input field",
+                "selectFocusedDate": "Select the date in focus",
+                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                 "upArrowDownArrow": "up and down arrow keys",
               }
             }
             placeholder="Date"
             readOnly={false}
-            renderCalendarDay={undefined}
             renderCalendarInfo={null}
-            renderDayContents={null}
+            renderDay={null}
             renderMonth={null}
             reopenPickerOnClearDate={false}
             required={false}
             screenReaderInputMessage=""
             showClearDate={false}
             showDefaultInputIcon={false}
-            small={false}
-            transitionDuration={undefined}
-            verticalHeight={null}
-            verticalSpacing={22}
             weekDayFormat="dd"
             withFullScreenPortal={false}
             withPortal={false}
@@ -151,9 +144,8 @@ ShallowWrapper {
               type="text"
               value=""
             />,
-            <withStyles(SingleDatePicker)
+            <SingleDatePicker
               anchorDirection="left"
-              block={false}
               customCloseIcon={null}
               customInputIcon={null}
               date={"1970-01-01T00:00:00.000Z"}
@@ -176,7 +168,6 @@ ShallowWrapper {
               monthFormat="MMMM YYYY"
               navNext={null}
               navPrev={null}
-              noBorder={false}
               numberOfMonths={1}
               onClose={[Function]}
               onDateChange={[Function]}
@@ -194,42 +185,37 @@ ShallowWrapper {
                   "dateIsUnavailable": [Function],
                   "enterKey": "Enter key",
                   "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                   "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                  "jumpToNextMonth": "Move forward to switch to the next month",
+                  "jumpToPrevMonth": "Move backward to switch to the previous month",
                   "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                   "keyboardShortcuts": "Keyboard Shortcuts",
                   "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
+                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                  "moveFocusByOneMonth": "Switch months",
+                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                  "openThisPanel": "Open this panel",
                   "pageUpPageDown": "page up and page down keys",
                   "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                  "returnFocusToInput": "Return to the date input field",
+                  "selectFocusedDate": "Select the date in focus",
+                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                   "upArrowDownArrow": "up and down arrow keys",
                 }
               }
               placeholder="Date"
               readOnly={false}
-              renderCalendarDay={undefined}
               renderCalendarInfo={null}
-              renderDayContents={null}
+              renderDay={null}
               renderMonth={null}
               reopenPickerOnClearDate={false}
               required={false}
               screenReaderInputMessage=""
               showClearDate={false}
               showDefaultInputIcon={false}
-              small={false}
-              transitionDuration={undefined}
-              verticalHeight={null}
-              verticalSpacing={22}
               weekDayFormat="dd"
               withFullScreenPortal={false}
               withPortal={false}
@@ -282,7 +268,6 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "anchorDirection": "left",
-              "block": false,
               "customCloseIcon": null,
               "customInputIcon": null,
               "date": "1970-01-01T00:00:00.000Z",
@@ -305,7 +290,6 @@ ShallowWrapper {
               "monthFormat": "MMMM YYYY",
               "navNext": null,
               "navPrev": null,
-              "noBorder": false,
               "numberOfMonths": 1,
               "onClose": [Function],
               "onDateChange": [Function],
@@ -322,41 +306,36 @@ ShallowWrapper {
                 "dateIsUnavailable": [Function],
                 "enterKey": "Enter key",
                 "escape": "Escape key",
-                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                 "homeEnd": "Home and end keys",
-                "jumpToNextMonth": "Move forward to switch to the next month.",
-                "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                "jumpToNextMonth": "Move forward to switch to the next month",
+                "jumpToPrevMonth": "Move backward to switch to the previous month",
                 "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                 "keyboardShortcuts": "Keyboard Shortcuts",
                 "leftArrowRightArrow": "Right and left arrow keys",
-                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                "moveFocusByOneMonth": "Switch months.",
-                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                "openThisPanel": "Open this panel.",
+                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                "moveFocusByOneMonth": "Switch months",
+                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                "openThisPanel": "Open this panel",
                 "pageUpPageDown": "page up and page down keys",
                 "questionMark": "Question mark",
-                "returnFocusToInput": "Return to the date input field.",
-                "selectFocusedDate": "Select the date in focus.",
-                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                "returnFocusToInput": "Return to the date input field",
+                "selectFocusedDate": "Select the date in focus",
+                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                 "upArrowDownArrow": "up and down arrow keys",
               },
               "placeholder": "Date",
               "readOnly": false,
-              "renderCalendarDay": undefined,
               "renderCalendarInfo": null,
-              "renderDayContents": null,
+              "renderDay": null,
               "renderMonth": null,
               "reopenPickerOnClearDate": false,
               "required": false,
               "screenReaderInputMessage": "",
               "showClearDate": false,
               "showDefaultInputIcon": false,
-              "small": false,
-              "transitionDuration": undefined,
-              "verticalHeight": null,
-              "verticalSpacing": 22,
               "weekDayFormat": "dd",
               "withFullScreenPortal": false,
               "withPortal": false,
@@ -419,9 +398,8 @@ ShallowWrapper {
               type="text"
               value=""
             />
-            <withStyles(SingleDatePicker)
+            <SingleDatePicker
               anchorDirection="left"
-              block={false}
               customCloseIcon={null}
               customInputIcon={null}
               date={"1970-01-01T00:00:00.000Z"}
@@ -444,7 +422,6 @@ ShallowWrapper {
               monthFormat="MMMM YYYY"
               navNext={null}
               navPrev={null}
-              noBorder={false}
               numberOfMonths={1}
               onClose={[Function]}
               onDateChange={[Function]}
@@ -462,42 +439,37 @@ ShallowWrapper {
                   "dateIsUnavailable": [Function],
                   "enterKey": "Enter key",
                   "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                   "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                  "jumpToNextMonth": "Move forward to switch to the next month",
+                  "jumpToPrevMonth": "Move backward to switch to the previous month",
                   "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                   "keyboardShortcuts": "Keyboard Shortcuts",
                   "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
+                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                  "moveFocusByOneMonth": "Switch months",
+                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                  "openThisPanel": "Open this panel",
                   "pageUpPageDown": "page up and page down keys",
                   "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                  "returnFocusToInput": "Return to the date input field",
+                  "selectFocusedDate": "Select the date in focus",
+                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                   "upArrowDownArrow": "up and down arrow keys",
                 }
               }
               placeholder="Date"
               readOnly={false}
-              renderCalendarDay={undefined}
               renderCalendarInfo={null}
-              renderDayContents={null}
+              renderDay={null}
               renderMonth={null}
               reopenPickerOnClearDate={false}
               required={false}
               screenReaderInputMessage=""
               showClearDate={false}
               showDefaultInputIcon={false}
-              small={false}
-              transitionDuration={undefined}
-              verticalHeight={null}
-              verticalSpacing={22}
               weekDayFormat="dd"
               withFullScreenPortal={false}
               withPortal={false}
@@ -535,9 +507,8 @@ ShallowWrapper {
                 type="text"
                 value=""
               />,
-              <withStyles(SingleDatePicker)
+              <SingleDatePicker
                 anchorDirection="left"
-                block={false}
                 customCloseIcon={null}
                 customInputIcon={null}
                 date={"1970-01-01T00:00:00.000Z"}
@@ -560,7 +531,6 @@ ShallowWrapper {
                 monthFormat="MMMM YYYY"
                 navNext={null}
                 navPrev={null}
-                noBorder={false}
                 numberOfMonths={1}
                 onClose={[Function]}
                 onDateChange={[Function]}
@@ -578,42 +548,37 @@ ShallowWrapper {
                     "dateIsUnavailable": [Function],
                     "enterKey": "Enter key",
                     "escape": "Escape key",
-                    "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                    "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                     "homeEnd": "Home and end keys",
-                    "jumpToNextMonth": "Move forward to switch to the next month.",
-                    "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                    "jumpToNextMonth": "Move forward to switch to the next month",
+                    "jumpToPrevMonth": "Move backward to switch to the previous month",
                     "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                     "keyboardShortcuts": "Keyboard Shortcuts",
                     "leftArrowRightArrow": "Right and left arrow keys",
-                    "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                    "moveFocusByOneMonth": "Switch months.",
-                    "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                    "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                    "openThisPanel": "Open this panel.",
+                    "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                    "moveFocusByOneMonth": "Switch months",
+                    "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                    "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                    "openThisPanel": "Open this panel",
                     "pageUpPageDown": "page up and page down keys",
                     "questionMark": "Question mark",
-                    "returnFocusToInput": "Return to the date input field.",
-                    "selectFocusedDate": "Select the date in focus.",
-                    "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                    "returnFocusToInput": "Return to the date input field",
+                    "selectFocusedDate": "Select the date in focus",
+                    "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                     "upArrowDownArrow": "up and down arrow keys",
                   }
                 }
                 placeholder="Date"
                 readOnly={false}
-                renderCalendarDay={undefined}
                 renderCalendarInfo={null}
-                renderDayContents={null}
+                renderDay={null}
                 renderMonth={null}
                 reopenPickerOnClearDate={false}
                 required={false}
                 screenReaderInputMessage=""
                 showClearDate={false}
                 showDefaultInputIcon={false}
-                small={false}
-                transitionDuration={undefined}
-                verticalHeight={null}
-                verticalSpacing={22}
                 weekDayFormat="dd"
                 withFullScreenPortal={false}
                 withPortal={false}
@@ -666,7 +631,6 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "anchorDirection": "left",
-                "block": false,
                 "customCloseIcon": null,
                 "customInputIcon": null,
                 "date": "1970-01-01T00:00:00.000Z",
@@ -689,7 +653,6 @@ ShallowWrapper {
                 "monthFormat": "MMMM YYYY",
                 "navNext": null,
                 "navPrev": null,
-                "noBorder": false,
                 "numberOfMonths": 1,
                 "onClose": [Function],
                 "onDateChange": [Function],
@@ -706,41 +669,36 @@ ShallowWrapper {
                   "dateIsUnavailable": [Function],
                   "enterKey": "Enter key",
                   "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                   "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                  "jumpToNextMonth": "Move forward to switch to the next month",
+                  "jumpToPrevMonth": "Move backward to switch to the previous month",
                   "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                   "keyboardShortcuts": "Keyboard Shortcuts",
                   "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
+                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                  "moveFocusByOneMonth": "Switch months",
+                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                  "openThisPanel": "Open this panel",
                   "pageUpPageDown": "page up and page down keys",
                   "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                  "returnFocusToInput": "Return to the date input field",
+                  "selectFocusedDate": "Select the date in focus",
+                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                   "upArrowDownArrow": "up and down arrow keys",
                 },
                 "placeholder": "Date",
                 "readOnly": false,
-                "renderCalendarDay": undefined,
                 "renderCalendarInfo": null,
-                "renderDayContents": null,
+                "renderDay": null,
                 "renderMonth": null,
                 "reopenPickerOnClearDate": false,
                 "required": false,
                 "screenReaderInputMessage": "",
                 "showClearDate": false,
                 "showDefaultInputIcon": false,
-                "small": false,
-                "transitionDuration": undefined,
-                "verticalHeight": null,
-                "verticalSpacing": 22,
                 "weekDayFormat": "dd",
                 "withFullScreenPortal": false,
                 "withPortal": false,
@@ -835,9 +793,8 @@ ShallowWrapper {
             type="text"
             value="1095"
           />
-          <withStyles(SingleDatePicker)
+          <SingleDatePicker
             anchorDirection="left"
-            block={false}
             customCloseIcon={null}
             customInputIcon={null}
             date={"1969-12-28T00:00:00.000Z"}
@@ -860,7 +817,6 @@ ShallowWrapper {
             monthFormat="MMMM YYYY"
             navNext={null}
             navPrev={null}
-            noBorder={false}
             numberOfMonths={1}
             onClose={[Function]}
             onDateChange={[Function]}
@@ -878,42 +834,37 @@ ShallowWrapper {
                 "dateIsUnavailable": [Function],
                 "enterKey": "Enter key",
                 "escape": "Escape key",
-                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                 "homeEnd": "Home and end keys",
-                "jumpToNextMonth": "Move forward to switch to the next month.",
-                "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                "jumpToNextMonth": "Move forward to switch to the next month",
+                "jumpToPrevMonth": "Move backward to switch to the previous month",
                 "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                 "keyboardShortcuts": "Keyboard Shortcuts",
                 "leftArrowRightArrow": "Right and left arrow keys",
-                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                "moveFocusByOneMonth": "Switch months.",
-                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                "openThisPanel": "Open this panel.",
+                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                "moveFocusByOneMonth": "Switch months",
+                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                "openThisPanel": "Open this panel",
                 "pageUpPageDown": "page up and page down keys",
                 "questionMark": "Question mark",
-                "returnFocusToInput": "Return to the date input field.",
-                "selectFocusedDate": "Select the date in focus.",
-                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                "returnFocusToInput": "Return to the date input field",
+                "selectFocusedDate": "Select the date in focus",
+                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                 "upArrowDownArrow": "up and down arrow keys",
               }
             }
             placeholder="Date"
             readOnly={false}
-            renderCalendarDay={undefined}
             renderCalendarInfo={null}
-            renderDayContents={null}
+            renderDay={null}
             renderMonth={null}
             reopenPickerOnClearDate={false}
             required={false}
             screenReaderInputMessage=""
             showClearDate={false}
             showDefaultInputIcon={false}
-            small={false}
-            transitionDuration={undefined}
-            verticalHeight={null}
-            verticalSpacing={22}
             weekDayFormat="dd"
             withFullScreenPortal={false}
             withPortal={false}
@@ -951,9 +902,8 @@ ShallowWrapper {
               type="text"
               value="1095"
             />,
-            <withStyles(SingleDatePicker)
+            <SingleDatePicker
               anchorDirection="left"
-              block={false}
               customCloseIcon={null}
               customInputIcon={null}
               date={"1969-12-28T00:00:00.000Z"}
@@ -976,7 +926,6 @@ ShallowWrapper {
               monthFormat="MMMM YYYY"
               navNext={null}
               navPrev={null}
-              noBorder={false}
               numberOfMonths={1}
               onClose={[Function]}
               onDateChange={[Function]}
@@ -994,42 +943,37 @@ ShallowWrapper {
                   "dateIsUnavailable": [Function],
                   "enterKey": "Enter key",
                   "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                   "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                  "jumpToNextMonth": "Move forward to switch to the next month",
+                  "jumpToPrevMonth": "Move backward to switch to the previous month",
                   "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                   "keyboardShortcuts": "Keyboard Shortcuts",
                   "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
+                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                  "moveFocusByOneMonth": "Switch months",
+                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                  "openThisPanel": "Open this panel",
                   "pageUpPageDown": "page up and page down keys",
                   "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                  "returnFocusToInput": "Return to the date input field",
+                  "selectFocusedDate": "Select the date in focus",
+                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                   "upArrowDownArrow": "up and down arrow keys",
                 }
               }
               placeholder="Date"
               readOnly={false}
-              renderCalendarDay={undefined}
               renderCalendarInfo={null}
-              renderDayContents={null}
+              renderDay={null}
               renderMonth={null}
               reopenPickerOnClearDate={false}
               required={false}
               screenReaderInputMessage=""
               showClearDate={false}
               showDefaultInputIcon={false}
-              small={false}
-              transitionDuration={undefined}
-              verticalHeight={null}
-              verticalSpacing={22}
               weekDayFormat="dd"
               withFullScreenPortal={false}
               withPortal={false}
@@ -1082,7 +1026,6 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "anchorDirection": "left",
-              "block": false,
               "customCloseIcon": null,
               "customInputIcon": null,
               "date": "1969-12-28T00:00:00.000Z",
@@ -1105,7 +1048,6 @@ ShallowWrapper {
               "monthFormat": "MMMM YYYY",
               "navNext": null,
               "navPrev": null,
-              "noBorder": false,
               "numberOfMonths": 1,
               "onClose": [Function],
               "onDateChange": [Function],
@@ -1122,41 +1064,36 @@ ShallowWrapper {
                 "dateIsUnavailable": [Function],
                 "enterKey": "Enter key",
                 "escape": "Escape key",
-                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                 "homeEnd": "Home and end keys",
-                "jumpToNextMonth": "Move forward to switch to the next month.",
-                "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                "jumpToNextMonth": "Move forward to switch to the next month",
+                "jumpToPrevMonth": "Move backward to switch to the previous month",
                 "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                 "keyboardShortcuts": "Keyboard Shortcuts",
                 "leftArrowRightArrow": "Right and left arrow keys",
-                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                "moveFocusByOneMonth": "Switch months.",
-                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                "openThisPanel": "Open this panel.",
+                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                "moveFocusByOneMonth": "Switch months",
+                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                "openThisPanel": "Open this panel",
                 "pageUpPageDown": "page up and page down keys",
                 "questionMark": "Question mark",
-                "returnFocusToInput": "Return to the date input field.",
-                "selectFocusedDate": "Select the date in focus.",
-                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                "returnFocusToInput": "Return to the date input field",
+                "selectFocusedDate": "Select the date in focus",
+                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                 "upArrowDownArrow": "up and down arrow keys",
               },
               "placeholder": "Date",
               "readOnly": false,
-              "renderCalendarDay": undefined,
               "renderCalendarInfo": null,
-              "renderDayContents": null,
+              "renderDay": null,
               "renderMonth": null,
               "reopenPickerOnClearDate": false,
               "required": false,
               "screenReaderInputMessage": "",
               "showClearDate": false,
               "showDefaultInputIcon": false,
-              "small": false,
-              "transitionDuration": undefined,
-              "verticalHeight": null,
-              "verticalSpacing": 22,
               "weekDayFormat": "dd",
               "withFullScreenPortal": false,
               "withPortal": false,
@@ -1219,9 +1156,8 @@ ShallowWrapper {
               type="text"
               value="1095"
             />
-            <withStyles(SingleDatePicker)
+            <SingleDatePicker
               anchorDirection="left"
-              block={false}
               customCloseIcon={null}
               customInputIcon={null}
               date={"1969-12-28T00:00:00.000Z"}
@@ -1244,7 +1180,6 @@ ShallowWrapper {
               monthFormat="MMMM YYYY"
               navNext={null}
               navPrev={null}
-              noBorder={false}
               numberOfMonths={1}
               onClose={[Function]}
               onDateChange={[Function]}
@@ -1262,42 +1197,37 @@ ShallowWrapper {
                   "dateIsUnavailable": [Function],
                   "enterKey": "Enter key",
                   "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                   "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                  "jumpToNextMonth": "Move forward to switch to the next month",
+                  "jumpToPrevMonth": "Move backward to switch to the previous month",
                   "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                   "keyboardShortcuts": "Keyboard Shortcuts",
                   "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
+                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                  "moveFocusByOneMonth": "Switch months",
+                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                  "openThisPanel": "Open this panel",
                   "pageUpPageDown": "page up and page down keys",
                   "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                  "returnFocusToInput": "Return to the date input field",
+                  "selectFocusedDate": "Select the date in focus",
+                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                   "upArrowDownArrow": "up and down arrow keys",
                 }
               }
               placeholder="Date"
               readOnly={false}
-              renderCalendarDay={undefined}
               renderCalendarInfo={null}
-              renderDayContents={null}
+              renderDay={null}
               renderMonth={null}
               reopenPickerOnClearDate={false}
               required={false}
               screenReaderInputMessage=""
               showClearDate={false}
               showDefaultInputIcon={false}
-              small={false}
-              transitionDuration={undefined}
-              verticalHeight={null}
-              verticalSpacing={22}
               weekDayFormat="dd"
               withFullScreenPortal={false}
               withPortal={false}
@@ -1335,9 +1265,8 @@ ShallowWrapper {
                 type="text"
                 value="1095"
               />,
-              <withStyles(SingleDatePicker)
+              <SingleDatePicker
                 anchorDirection="left"
-                block={false}
                 customCloseIcon={null}
                 customInputIcon={null}
                 date={"1969-12-28T00:00:00.000Z"}
@@ -1360,7 +1289,6 @@ ShallowWrapper {
                 monthFormat="MMMM YYYY"
                 navNext={null}
                 navPrev={null}
-                noBorder={false}
                 numberOfMonths={1}
                 onClose={[Function]}
                 onDateChange={[Function]}
@@ -1378,42 +1306,37 @@ ShallowWrapper {
                     "dateIsUnavailable": [Function],
                     "enterKey": "Enter key",
                     "escape": "Escape key",
-                    "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                    "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                     "homeEnd": "Home and end keys",
-                    "jumpToNextMonth": "Move forward to switch to the next month.",
-                    "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                    "jumpToNextMonth": "Move forward to switch to the next month",
+                    "jumpToPrevMonth": "Move backward to switch to the previous month",
                     "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                     "keyboardShortcuts": "Keyboard Shortcuts",
                     "leftArrowRightArrow": "Right and left arrow keys",
-                    "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                    "moveFocusByOneMonth": "Switch months.",
-                    "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                    "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                    "openThisPanel": "Open this panel.",
+                    "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                    "moveFocusByOneMonth": "Switch months",
+                    "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                    "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                    "openThisPanel": "Open this panel",
                     "pageUpPageDown": "page up and page down keys",
                     "questionMark": "Question mark",
-                    "returnFocusToInput": "Return to the date input field.",
-                    "selectFocusedDate": "Select the date in focus.",
-                    "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                    "returnFocusToInput": "Return to the date input field",
+                    "selectFocusedDate": "Select the date in focus",
+                    "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                     "upArrowDownArrow": "up and down arrow keys",
                   }
                 }
                 placeholder="Date"
                 readOnly={false}
-                renderCalendarDay={undefined}
                 renderCalendarInfo={null}
-                renderDayContents={null}
+                renderDay={null}
                 renderMonth={null}
                 reopenPickerOnClearDate={false}
                 required={false}
                 screenReaderInputMessage=""
                 showClearDate={false}
                 showDefaultInputIcon={false}
-                small={false}
-                transitionDuration={undefined}
-                verticalHeight={null}
-                verticalSpacing={22}
                 weekDayFormat="dd"
                 withFullScreenPortal={false}
                 withPortal={false}
@@ -1466,7 +1389,6 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "anchorDirection": "left",
-                "block": false,
                 "customCloseIcon": null,
                 "customInputIcon": null,
                 "date": "1969-12-28T00:00:00.000Z",
@@ -1489,7 +1411,6 @@ ShallowWrapper {
                 "monthFormat": "MMMM YYYY",
                 "navNext": null,
                 "navPrev": null,
-                "noBorder": false,
                 "numberOfMonths": 1,
                 "onClose": [Function],
                 "onDateChange": [Function],
@@ -1506,41 +1427,36 @@ ShallowWrapper {
                   "dateIsUnavailable": [Function],
                   "enterKey": "Enter key",
                   "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                   "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                  "jumpToNextMonth": "Move forward to switch to the next month",
+                  "jumpToPrevMonth": "Move backward to switch to the previous month",
                   "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                   "keyboardShortcuts": "Keyboard Shortcuts",
                   "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
+                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                  "moveFocusByOneMonth": "Switch months",
+                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                  "openThisPanel": "Open this panel",
                   "pageUpPageDown": "page up and page down keys",
                   "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                  "returnFocusToInput": "Return to the date input field",
+                  "selectFocusedDate": "Select the date in focus",
+                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                   "upArrowDownArrow": "up and down arrow keys",
                 },
                 "placeholder": "Date",
                 "readOnly": false,
-                "renderCalendarDay": undefined,
                 "renderCalendarInfo": null,
-                "renderDayContents": null,
+                "renderDay": null,
                 "renderMonth": null,
                 "reopenPickerOnClearDate": false,
                 "required": false,
                 "screenReaderInputMessage": "",
                 "showClearDate": false,
                 "showDefaultInputIcon": false,
-                "small": false,
-                "transitionDuration": undefined,
-                "verticalHeight": null,
-                "verticalSpacing": 22,
                 "weekDayFormat": "dd",
                 "withFullScreenPortal": false,
                 "withPortal": false,
@@ -1625,9 +1541,8 @@ ShallowWrapper {
             type="text"
             value=""
           />
-          <withStyles(SingleDatePicker)
+          <SingleDatePicker
             anchorDirection="left"
-            block={false}
             customCloseIcon={null}
             customInputIcon={null}
             date={"1970-01-01T00:00:00.000Z"}
@@ -1650,7 +1565,6 @@ ShallowWrapper {
             monthFormat="MMMM YYYY"
             navNext={null}
             navPrev={null}
-            noBorder={false}
             numberOfMonths={1}
             onClose={[Function]}
             onDateChange={[Function]}
@@ -1668,42 +1582,37 @@ ShallowWrapper {
                 "dateIsUnavailable": [Function],
                 "enterKey": "Enter key",
                 "escape": "Escape key",
-                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                 "homeEnd": "Home and end keys",
-                "jumpToNextMonth": "Move forward to switch to the next month.",
-                "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                "jumpToNextMonth": "Move forward to switch to the next month",
+                "jumpToPrevMonth": "Move backward to switch to the previous month",
                 "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                 "keyboardShortcuts": "Keyboard Shortcuts",
                 "leftArrowRightArrow": "Right and left arrow keys",
-                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                "moveFocusByOneMonth": "Switch months.",
-                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                "openThisPanel": "Open this panel.",
+                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                "moveFocusByOneMonth": "Switch months",
+                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                "openThisPanel": "Open this panel",
                 "pageUpPageDown": "page up and page down keys",
                 "questionMark": "Question mark",
-                "returnFocusToInput": "Return to the date input field.",
-                "selectFocusedDate": "Select the date in focus.",
-                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                "returnFocusToInput": "Return to the date input field",
+                "selectFocusedDate": "Select the date in focus",
+                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                 "upArrowDownArrow": "up and down arrow keys",
               }
             }
             placeholder="Date"
             readOnly={false}
-            renderCalendarDay={undefined}
             renderCalendarInfo={null}
-            renderDayContents={null}
+            renderDay={null}
             renderMonth={null}
             reopenPickerOnClearDate={false}
             required={false}
             screenReaderInputMessage=""
             showClearDate={false}
             showDefaultInputIcon={false}
-            small={false}
-            transitionDuration={undefined}
-            verticalHeight={null}
-            verticalSpacing={22}
             weekDayFormat="dd"
             withFullScreenPortal={false}
             withPortal={false}
@@ -1741,9 +1650,8 @@ ShallowWrapper {
               type="text"
               value=""
             />,
-            <withStyles(SingleDatePicker)
+            <SingleDatePicker
               anchorDirection="left"
-              block={false}
               customCloseIcon={null}
               customInputIcon={null}
               date={"1970-01-01T00:00:00.000Z"}
@@ -1766,7 +1674,6 @@ ShallowWrapper {
               monthFormat="MMMM YYYY"
               navNext={null}
               navPrev={null}
-              noBorder={false}
               numberOfMonths={1}
               onClose={[Function]}
               onDateChange={[Function]}
@@ -1784,42 +1691,37 @@ ShallowWrapper {
                   "dateIsUnavailable": [Function],
                   "enterKey": "Enter key",
                   "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                   "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                  "jumpToNextMonth": "Move forward to switch to the next month",
+                  "jumpToPrevMonth": "Move backward to switch to the previous month",
                   "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                   "keyboardShortcuts": "Keyboard Shortcuts",
                   "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
+                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                  "moveFocusByOneMonth": "Switch months",
+                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                  "openThisPanel": "Open this panel",
                   "pageUpPageDown": "page up and page down keys",
                   "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                  "returnFocusToInput": "Return to the date input field",
+                  "selectFocusedDate": "Select the date in focus",
+                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                   "upArrowDownArrow": "up and down arrow keys",
                 }
               }
               placeholder="Date"
               readOnly={false}
-              renderCalendarDay={undefined}
               renderCalendarInfo={null}
-              renderDayContents={null}
+              renderDay={null}
               renderMonth={null}
               reopenPickerOnClearDate={false}
               required={false}
               screenReaderInputMessage=""
               showClearDate={false}
               showDefaultInputIcon={false}
-              small={false}
-              transitionDuration={undefined}
-              verticalHeight={null}
-              verticalSpacing={22}
               weekDayFormat="dd"
               withFullScreenPortal={false}
               withPortal={false}
@@ -1872,7 +1774,6 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "anchorDirection": "left",
-              "block": false,
               "customCloseIcon": null,
               "customInputIcon": null,
               "date": "1970-01-01T00:00:00.000Z",
@@ -1895,7 +1796,6 @@ ShallowWrapper {
               "monthFormat": "MMMM YYYY",
               "navNext": null,
               "navPrev": null,
-              "noBorder": false,
               "numberOfMonths": 1,
               "onClose": [Function],
               "onDateChange": [Function],
@@ -1912,41 +1812,36 @@ ShallowWrapper {
                 "dateIsUnavailable": [Function],
                 "enterKey": "Enter key",
                 "escape": "Escape key",
-                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                 "homeEnd": "Home and end keys",
-                "jumpToNextMonth": "Move forward to switch to the next month.",
-                "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                "jumpToNextMonth": "Move forward to switch to the next month",
+                "jumpToPrevMonth": "Move backward to switch to the previous month",
                 "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                 "keyboardShortcuts": "Keyboard Shortcuts",
                 "leftArrowRightArrow": "Right and left arrow keys",
-                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                "moveFocusByOneMonth": "Switch months.",
-                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                "openThisPanel": "Open this panel.",
+                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                "moveFocusByOneMonth": "Switch months",
+                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                "openThisPanel": "Open this panel",
                 "pageUpPageDown": "page up and page down keys",
                 "questionMark": "Question mark",
-                "returnFocusToInput": "Return to the date input field.",
-                "selectFocusedDate": "Select the date in focus.",
-                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                "returnFocusToInput": "Return to the date input field",
+                "selectFocusedDate": "Select the date in focus",
+                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                 "upArrowDownArrow": "up and down arrow keys",
               },
               "placeholder": "Date",
               "readOnly": false,
-              "renderCalendarDay": undefined,
               "renderCalendarInfo": null,
-              "renderDayContents": null,
+              "renderDay": null,
               "renderMonth": null,
               "reopenPickerOnClearDate": false,
               "required": false,
               "screenReaderInputMessage": "",
               "showClearDate": false,
               "showDefaultInputIcon": false,
-              "small": false,
-              "transitionDuration": undefined,
-              "verticalHeight": null,
-              "verticalSpacing": 22,
               "weekDayFormat": "dd",
               "withFullScreenPortal": false,
               "withPortal": false,
@@ -2009,9 +1904,8 @@ ShallowWrapper {
               type="text"
               value=""
             />
-            <withStyles(SingleDatePicker)
+            <SingleDatePicker
               anchorDirection="left"
-              block={false}
               customCloseIcon={null}
               customInputIcon={null}
               date={"1970-01-01T00:00:00.000Z"}
@@ -2034,7 +1928,6 @@ ShallowWrapper {
               monthFormat="MMMM YYYY"
               navNext={null}
               navPrev={null}
-              noBorder={false}
               numberOfMonths={1}
               onClose={[Function]}
               onDateChange={[Function]}
@@ -2052,42 +1945,37 @@ ShallowWrapper {
                   "dateIsUnavailable": [Function],
                   "enterKey": "Enter key",
                   "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                   "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                  "jumpToNextMonth": "Move forward to switch to the next month",
+                  "jumpToPrevMonth": "Move backward to switch to the previous month",
                   "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                   "keyboardShortcuts": "Keyboard Shortcuts",
                   "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
+                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                  "moveFocusByOneMonth": "Switch months",
+                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                  "openThisPanel": "Open this panel",
                   "pageUpPageDown": "page up and page down keys",
                   "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                  "returnFocusToInput": "Return to the date input field",
+                  "selectFocusedDate": "Select the date in focus",
+                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                   "upArrowDownArrow": "up and down arrow keys",
                 }
               }
               placeholder="Date"
               readOnly={false}
-              renderCalendarDay={undefined}
               renderCalendarInfo={null}
-              renderDayContents={null}
+              renderDay={null}
               renderMonth={null}
               reopenPickerOnClearDate={false}
               required={false}
               screenReaderInputMessage=""
               showClearDate={false}
               showDefaultInputIcon={false}
-              small={false}
-              transitionDuration={undefined}
-              verticalHeight={null}
-              verticalSpacing={22}
               weekDayFormat="dd"
               withFullScreenPortal={false}
               withPortal={false}
@@ -2125,9 +2013,8 @@ ShallowWrapper {
                 type="text"
                 value=""
               />,
-              <withStyles(SingleDatePicker)
+              <SingleDatePicker
                 anchorDirection="left"
-                block={false}
                 customCloseIcon={null}
                 customInputIcon={null}
                 date={"1970-01-01T00:00:00.000Z"}
@@ -2150,7 +2037,6 @@ ShallowWrapper {
                 monthFormat="MMMM YYYY"
                 navNext={null}
                 navPrev={null}
-                noBorder={false}
                 numberOfMonths={1}
                 onClose={[Function]}
                 onDateChange={[Function]}
@@ -2168,42 +2054,37 @@ ShallowWrapper {
                     "dateIsUnavailable": [Function],
                     "enterKey": "Enter key",
                     "escape": "Escape key",
-                    "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                    "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                     "homeEnd": "Home and end keys",
-                    "jumpToNextMonth": "Move forward to switch to the next month.",
-                    "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                    "jumpToNextMonth": "Move forward to switch to the next month",
+                    "jumpToPrevMonth": "Move backward to switch to the previous month",
                     "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                     "keyboardShortcuts": "Keyboard Shortcuts",
                     "leftArrowRightArrow": "Right and left arrow keys",
-                    "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                    "moveFocusByOneMonth": "Switch months.",
-                    "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                    "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                    "openThisPanel": "Open this panel.",
+                    "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                    "moveFocusByOneMonth": "Switch months",
+                    "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                    "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                    "openThisPanel": "Open this panel",
                     "pageUpPageDown": "page up and page down keys",
                     "questionMark": "Question mark",
-                    "returnFocusToInput": "Return to the date input field.",
-                    "selectFocusedDate": "Select the date in focus.",
-                    "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                    "returnFocusToInput": "Return to the date input field",
+                    "selectFocusedDate": "Select the date in focus",
+                    "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                     "upArrowDownArrow": "up and down arrow keys",
                   }
                 }
                 placeholder="Date"
                 readOnly={false}
-                renderCalendarDay={undefined}
                 renderCalendarInfo={null}
-                renderDayContents={null}
+                renderDay={null}
                 renderMonth={null}
                 reopenPickerOnClearDate={false}
                 required={false}
                 screenReaderInputMessage=""
                 showClearDate={false}
                 showDefaultInputIcon={false}
-                small={false}
-                transitionDuration={undefined}
-                verticalHeight={null}
-                verticalSpacing={22}
                 weekDayFormat="dd"
                 withFullScreenPortal={false}
                 withPortal={false}
@@ -2256,7 +2137,6 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "anchorDirection": "left",
-                "block": false,
                 "customCloseIcon": null,
                 "customInputIcon": null,
                 "date": "1970-01-01T00:00:00.000Z",
@@ -2279,7 +2159,6 @@ ShallowWrapper {
                 "monthFormat": "MMMM YYYY",
                 "navNext": null,
                 "navPrev": null,
-                "noBorder": false,
                 "numberOfMonths": 1,
                 "onClose": [Function],
                 "onDateChange": [Function],
@@ -2296,41 +2175,36 @@ ShallowWrapper {
                   "dateIsUnavailable": [Function],
                   "enterKey": "Enter key",
                   "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                   "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                  "jumpToNextMonth": "Move forward to switch to the next month",
+                  "jumpToPrevMonth": "Move backward to switch to the previous month",
                   "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                   "keyboardShortcuts": "Keyboard Shortcuts",
                   "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
+                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                  "moveFocusByOneMonth": "Switch months",
+                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                  "openThisPanel": "Open this panel",
                   "pageUpPageDown": "page up and page down keys",
                   "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                  "returnFocusToInput": "Return to the date input field",
+                  "selectFocusedDate": "Select the date in focus",
+                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                   "upArrowDownArrow": "up and down arrow keys",
                 },
                 "placeholder": "Date",
                 "readOnly": false,
-                "renderCalendarDay": undefined,
                 "renderCalendarInfo": null,
-                "renderDayContents": null,
+                "renderDay": null,
                 "renderMonth": null,
                 "reopenPickerOnClearDate": false,
                 "required": false,
                 "screenReaderInputMessage": "",
                 "showClearDate": false,
                 "showDefaultInputIcon": false,
-                "small": false,
-                "transitionDuration": undefined,
-                "verticalHeight": null,
-                "verticalSpacing": 22,
                 "weekDayFormat": "dd",
                 "withFullScreenPortal": false,
                 "withPortal": false,
@@ -2417,9 +2291,8 @@ ShallowWrapper {
             type="text"
             value=""
           />
-          <withStyles(SingleDatePicker)
+          <SingleDatePicker
             anchorDirection="left"
-            block={false}
             customCloseIcon={null}
             customInputIcon={null}
             date={"1970-01-01T00:00:00.000Z"}
@@ -2442,7 +2315,6 @@ ShallowWrapper {
             monthFormat="MMMM YYYY"
             navNext={null}
             navPrev={null}
-            noBorder={false}
             numberOfMonths={1}
             onClose={[Function]}
             onDateChange={[Function]}
@@ -2460,42 +2332,37 @@ ShallowWrapper {
                 "dateIsUnavailable": [Function],
                 "enterKey": "Enter key",
                 "escape": "Escape key",
-                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                 "homeEnd": "Home and end keys",
-                "jumpToNextMonth": "Move forward to switch to the next month.",
-                "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                "jumpToNextMonth": "Move forward to switch to the next month",
+                "jumpToPrevMonth": "Move backward to switch to the previous month",
                 "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                 "keyboardShortcuts": "Keyboard Shortcuts",
                 "leftArrowRightArrow": "Right and left arrow keys",
-                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                "moveFocusByOneMonth": "Switch months.",
-                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                "openThisPanel": "Open this panel.",
+                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                "moveFocusByOneMonth": "Switch months",
+                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                "openThisPanel": "Open this panel",
                 "pageUpPageDown": "page up and page down keys",
                 "questionMark": "Question mark",
-                "returnFocusToInput": "Return to the date input field.",
-                "selectFocusedDate": "Select the date in focus.",
-                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                "returnFocusToInput": "Return to the date input field",
+                "selectFocusedDate": "Select the date in focus",
+                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                 "upArrowDownArrow": "up and down arrow keys",
               }
             }
             placeholder="Date"
             readOnly={false}
-            renderCalendarDay={undefined}
             renderCalendarInfo={null}
-            renderDayContents={null}
+            renderDay={null}
             renderMonth={null}
             reopenPickerOnClearDate={false}
             required={false}
             screenReaderInputMessage=""
             showClearDate={false}
             showDefaultInputIcon={false}
-            small={false}
-            transitionDuration={undefined}
-            verticalHeight={null}
-            verticalSpacing={22}
             weekDayFormat="dd"
             withFullScreenPortal={false}
             withPortal={false}
@@ -2543,9 +2410,8 @@ ShallowWrapper {
               type="text"
               value=""
             />,
-            <withStyles(SingleDatePicker)
+            <SingleDatePicker
               anchorDirection="left"
-              block={false}
               customCloseIcon={null}
               customInputIcon={null}
               date={"1970-01-01T00:00:00.000Z"}
@@ -2568,7 +2434,6 @@ ShallowWrapper {
               monthFormat="MMMM YYYY"
               navNext={null}
               navPrev={null}
-              noBorder={false}
               numberOfMonths={1}
               onClose={[Function]}
               onDateChange={[Function]}
@@ -2586,42 +2451,37 @@ ShallowWrapper {
                   "dateIsUnavailable": [Function],
                   "enterKey": "Enter key",
                   "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                   "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                  "jumpToNextMonth": "Move forward to switch to the next month",
+                  "jumpToPrevMonth": "Move backward to switch to the previous month",
                   "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                   "keyboardShortcuts": "Keyboard Shortcuts",
                   "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
+                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                  "moveFocusByOneMonth": "Switch months",
+                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                  "openThisPanel": "Open this panel",
                   "pageUpPageDown": "page up and page down keys",
                   "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                  "returnFocusToInput": "Return to the date input field",
+                  "selectFocusedDate": "Select the date in focus",
+                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                   "upArrowDownArrow": "up and down arrow keys",
                 }
               }
               placeholder="Date"
               readOnly={false}
-              renderCalendarDay={undefined}
               renderCalendarInfo={null}
-              renderDayContents={null}
+              renderDay={null}
               renderMonth={null}
               reopenPickerOnClearDate={false}
               required={false}
               screenReaderInputMessage=""
               showClearDate={false}
               showDefaultInputIcon={false}
-              small={false}
-              transitionDuration={undefined}
-              verticalHeight={null}
-              verticalSpacing={22}
               weekDayFormat="dd"
               withFullScreenPortal={false}
               withPortal={false}
@@ -2674,7 +2534,6 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "anchorDirection": "left",
-              "block": false,
               "customCloseIcon": null,
               "customInputIcon": null,
               "date": "1970-01-01T00:00:00.000Z",
@@ -2697,7 +2556,6 @@ ShallowWrapper {
               "monthFormat": "MMMM YYYY",
               "navNext": null,
               "navPrev": null,
-              "noBorder": false,
               "numberOfMonths": 1,
               "onClose": [Function],
               "onDateChange": [Function],
@@ -2714,41 +2572,36 @@ ShallowWrapper {
                 "dateIsUnavailable": [Function],
                 "enterKey": "Enter key",
                 "escape": "Escape key",
-                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                 "homeEnd": "Home and end keys",
-                "jumpToNextMonth": "Move forward to switch to the next month.",
-                "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                "jumpToNextMonth": "Move forward to switch to the next month",
+                "jumpToPrevMonth": "Move backward to switch to the previous month",
                 "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                 "keyboardShortcuts": "Keyboard Shortcuts",
                 "leftArrowRightArrow": "Right and left arrow keys",
-                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                "moveFocusByOneMonth": "Switch months.",
-                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                "openThisPanel": "Open this panel.",
+                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                "moveFocusByOneMonth": "Switch months",
+                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                "openThisPanel": "Open this panel",
                 "pageUpPageDown": "page up and page down keys",
                 "questionMark": "Question mark",
-                "returnFocusToInput": "Return to the date input field.",
-                "selectFocusedDate": "Select the date in focus.",
-                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                "returnFocusToInput": "Return to the date input field",
+                "selectFocusedDate": "Select the date in focus",
+                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                 "upArrowDownArrow": "up and down arrow keys",
               },
               "placeholder": "Date",
               "readOnly": false,
-              "renderCalendarDay": undefined,
               "renderCalendarInfo": null,
-              "renderDayContents": null,
+              "renderDay": null,
               "renderMonth": null,
               "reopenPickerOnClearDate": false,
               "required": false,
               "screenReaderInputMessage": "",
               "showClearDate": false,
               "showDefaultInputIcon": false,
-              "small": false,
-              "transitionDuration": undefined,
-              "verticalHeight": null,
-              "verticalSpacing": 22,
               "weekDayFormat": "dd",
               "withFullScreenPortal": false,
               "withPortal": false,
@@ -2813,9 +2666,8 @@ ShallowWrapper {
               type="text"
               value=""
             />
-            <withStyles(SingleDatePicker)
+            <SingleDatePicker
               anchorDirection="left"
-              block={false}
               customCloseIcon={null}
               customInputIcon={null}
               date={"1970-01-01T00:00:00.000Z"}
@@ -2838,7 +2690,6 @@ ShallowWrapper {
               monthFormat="MMMM YYYY"
               navNext={null}
               navPrev={null}
-              noBorder={false}
               numberOfMonths={1}
               onClose={[Function]}
               onDateChange={[Function]}
@@ -2856,42 +2707,37 @@ ShallowWrapper {
                   "dateIsUnavailable": [Function],
                   "enterKey": "Enter key",
                   "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                   "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                  "jumpToNextMonth": "Move forward to switch to the next month",
+                  "jumpToPrevMonth": "Move backward to switch to the previous month",
                   "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                   "keyboardShortcuts": "Keyboard Shortcuts",
                   "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
+                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                  "moveFocusByOneMonth": "Switch months",
+                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                  "openThisPanel": "Open this panel",
                   "pageUpPageDown": "page up and page down keys",
                   "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                  "returnFocusToInput": "Return to the date input field",
+                  "selectFocusedDate": "Select the date in focus",
+                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                   "upArrowDownArrow": "up and down arrow keys",
                 }
               }
               placeholder="Date"
               readOnly={false}
-              renderCalendarDay={undefined}
               renderCalendarInfo={null}
-              renderDayContents={null}
+              renderDay={null}
               renderMonth={null}
               reopenPickerOnClearDate={false}
               required={false}
               screenReaderInputMessage=""
               showClearDate={false}
               showDefaultInputIcon={false}
-              small={false}
-              transitionDuration={undefined}
-              verticalHeight={null}
-              verticalSpacing={22}
               weekDayFormat="dd"
               withFullScreenPortal={false}
               withPortal={false}
@@ -2939,9 +2785,8 @@ ShallowWrapper {
                 type="text"
                 value=""
               />,
-              <withStyles(SingleDatePicker)
+              <SingleDatePicker
                 anchorDirection="left"
-                block={false}
                 customCloseIcon={null}
                 customInputIcon={null}
                 date={"1970-01-01T00:00:00.000Z"}
@@ -2964,7 +2809,6 @@ ShallowWrapper {
                 monthFormat="MMMM YYYY"
                 navNext={null}
                 navPrev={null}
-                noBorder={false}
                 numberOfMonths={1}
                 onClose={[Function]}
                 onDateChange={[Function]}
@@ -2982,42 +2826,37 @@ ShallowWrapper {
                     "dateIsUnavailable": [Function],
                     "enterKey": "Enter key",
                     "escape": "Escape key",
-                    "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                    "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                     "homeEnd": "Home and end keys",
-                    "jumpToNextMonth": "Move forward to switch to the next month.",
-                    "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                    "jumpToNextMonth": "Move forward to switch to the next month",
+                    "jumpToPrevMonth": "Move backward to switch to the previous month",
                     "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                     "keyboardShortcuts": "Keyboard Shortcuts",
                     "leftArrowRightArrow": "Right and left arrow keys",
-                    "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                    "moveFocusByOneMonth": "Switch months.",
-                    "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                    "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                    "openThisPanel": "Open this panel.",
+                    "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                    "moveFocusByOneMonth": "Switch months",
+                    "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                    "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                    "openThisPanel": "Open this panel",
                     "pageUpPageDown": "page up and page down keys",
                     "questionMark": "Question mark",
-                    "returnFocusToInput": "Return to the date input field.",
-                    "selectFocusedDate": "Select the date in focus.",
-                    "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                    "returnFocusToInput": "Return to the date input field",
+                    "selectFocusedDate": "Select the date in focus",
+                    "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                     "upArrowDownArrow": "up and down arrow keys",
                   }
                 }
                 placeholder="Date"
                 readOnly={false}
-                renderCalendarDay={undefined}
                 renderCalendarInfo={null}
-                renderDayContents={null}
+                renderDay={null}
                 renderMonth={null}
                 reopenPickerOnClearDate={false}
                 required={false}
                 screenReaderInputMessage=""
                 showClearDate={false}
                 showDefaultInputIcon={false}
-                small={false}
-                transitionDuration={undefined}
-                verticalHeight={null}
-                verticalSpacing={22}
                 weekDayFormat="dd"
                 withFullScreenPortal={false}
                 withPortal={false}
@@ -3070,7 +2909,6 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "anchorDirection": "left",
-                "block": false,
                 "customCloseIcon": null,
                 "customInputIcon": null,
                 "date": "1970-01-01T00:00:00.000Z",
@@ -3093,7 +2931,6 @@ ShallowWrapper {
                 "monthFormat": "MMMM YYYY",
                 "navNext": null,
                 "navPrev": null,
-                "noBorder": false,
                 "numberOfMonths": 1,
                 "onClose": [Function],
                 "onDateChange": [Function],
@@ -3110,41 +2947,36 @@ ShallowWrapper {
                   "dateIsUnavailable": [Function],
                   "enterKey": "Enter key",
                   "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
                   "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                  "jumpToNextMonth": "Move forward to switch to the next month",
+                  "jumpToPrevMonth": "Move backward to switch to the previous month",
                   "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
                   "keyboardShortcuts": "Keyboard Shortcuts",
                   "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
+                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+                  "moveFocusByOneMonth": "Switch months",
+                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+                  "openThisPanel": "Open this panel",
                   "pageUpPageDown": "page up and page down keys",
                   "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                  "returnFocusToInput": "Return to the date input field",
+                  "selectFocusedDate": "Select the date in focus",
+                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
                   "upArrowDownArrow": "up and down arrow keys",
                 },
                 "placeholder": "Date",
                 "readOnly": false,
-                "renderCalendarDay": undefined,
                 "renderCalendarInfo": null,
-                "renderDayContents": null,
+                "renderDay": null,
                 "renderMonth": null,
                 "reopenPickerOnClearDate": false,
                 "required": false,
                 "screenReaderInputMessage": "",
                 "showClearDate": false,
                 "showDefaultInputIcon": false,
-                "small": false,
-                "transitionDuration": undefined,
-                "verticalHeight": null,
-                "verticalSpacing": 22,
                 "weekDayFormat": "dd",
                 "withFullScreenPortal": false,
                 "withPortal": false,
