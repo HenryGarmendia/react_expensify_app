@@ -22,6 +22,10 @@ database.ref().set({
         city: 'San Francisco',
         country: 'United States'
     }
+}).then(() => {
+    console.log('Data is saved');
+}).catch((e) => {
+    console.log('Data failed', e);
 });
 
 // database.ref().set('This is my data.');
