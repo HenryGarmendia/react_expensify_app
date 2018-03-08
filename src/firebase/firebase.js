@@ -14,26 +14,121 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
-database.ref().set({
-    name: 'Henry Garmendia',
-    age: 38,
-    isSingle: false,
-    location: {
-        city: 'San Francisco',
-        country: 'United States'
-    }
-}).then(() => {
-    console.log('Data is saved');
-}).catch((e) => {
-    console.log('Data failed', e);
-});
+export { firebase, database as default };
 
-// database.ref().set('This is my data.');
+// database.ref('expenses')
+//     .once('value')
+//     .then((snapshot) => {
+//         const expenses = [];
+//         snapshot.forEach(childSnapshot => {
+//             expenses.push({
+//                 id: childSnapshot.key,
+//                 ...childSnapshot.val()
+//             });
+//         });
 
-database.ref('age').set(100);
-database.ref('location/city').set('Oakland');
+//         console.log(expenses);
+//     });
 
-database.ref('attributes').set({
-    height: 85,
-    weight: 316
-});
+// database.ref('expenses').on('value', (snapshot) => {
+//     const expenses = [];
+//     snapshot.forEach(childSnapshot => {
+//         expenses.push({
+//             id: childSnapshot.key,
+//             ...childSnapshot.val()
+//         });
+//     });
+
+//     console.log(expenses);
+// });
+
+// database.ref('expenses').push({
+//     description: 'Rent',
+//     note: '',
+//     amount: 109500,
+//     createdAt: 4596542256
+// });
+
+// database.ref('expenses').push({
+//     description: 'Phone bill',
+//     note: '',
+//     amount: 5900,
+//     createdAt: 66978745565
+// });
+
+// database.ref('expenses').push({
+//     description: 'Food',
+//     note: '',
+//     amount: 1200,
+//     createdAt: 99887665
+// });
+
+// database.ref('notes').push({
+//     title: 'Course Topics.',
+//     body: 'React Native, Angular, Python'
+// });
+
+// const firebaseNotes = {
+//     notes: {
+
+//     }
+// };
+
+// database.ref().on('value', (snapshot) => {
+//     const val = snapshot.val();
+//     console.log(`${val.name} is a ${val.job.title} at ${val.job.company}`);
+// });
+
+// database.ref()
+//     .once('value')
+//     .then((snapshot) => {
+//         const val = snapshot.val();
+//         console.log(val);
+//     })
+//     .catch((e) => {
+//         console.log('Error fetching data', e);
+//     });
+
+// database.ref().set({
+//     name: 'Henry Garmendia',
+//     age: 38,
+//     isSingle: false,
+//     stressLevel: 6,
+//     job: {
+//         title: 'Software Developer',
+//         company: 'Google'
+//     },
+//     location: {
+//         city: 'San Francisco',
+//         country: 'United States'
+//     }
+// }).then(() => {
+//     console.log('Data is saved.');
+// }).catch((e) => {
+//     console.log('Data failed.', e);
+// });
+
+// database.ref('attributes').set({
+//     height: 85,
+//     weight: 316
+// }).then(() => {
+//     console.log('Second set call worked.');
+// }).catch((e) => {
+//     console.log('Things didn\'t worked out for second error', e);
+// });
+
+// database.ref().update({
+//     name: 'Hendogg Garmendia',
+//     age: 114,
+//     stressLevel: 9,
+//     'job/company': 'Amazon',
+//     'location/city': 'Silicon Valley'
+// });
+
+// database.ref('isSingle')
+//     .remove()
+//     .then(() => {
+//         console.log('Data was removed.');
+//     }).catch((e) => {
+//         console.log('Data not removed.', e);
+//     });
