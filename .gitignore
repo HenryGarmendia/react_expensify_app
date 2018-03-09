@@ -12,6 +12,8 @@
 node_modules/
 public/dist/
 .tmp/
+.env.development
+.env.test
 
 # OS or Editor folders
 .DS_Store
