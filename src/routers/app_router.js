@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
+import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory'; 
 import AddExpense from '../components/add_expense';
 import ExpenseDashboard from '../components/expense_dashboard';
 import EditExpense from '../components/edit_expense';
@@ -8,8 +9,10 @@ import HelpPage from '../components/help_page';
 import NotFoundPage from '../components/not_found_page';
 import LoginPage from '../components/login_page';
 
+export const history = createHistory();
+
 const AppRouter = () => (
-    <BrowserRouter>
+    <Router history={history}>
         <div>
             <Header />
             <Switch>
@@ -21,7 +24,7 @@ const AppRouter = () => (
                 <Route component={NotFoundPage} />
             </Switch>
         </div>
-    </BrowserRouter>
+    </Router>
 );
 
 export default AppRouter;
