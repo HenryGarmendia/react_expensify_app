@@ -12,4 +12,14 @@
     &--link {
         background: none;
     }
+
+    &--secondary {
+        background: #D91E18;
+
+        @media (min-width: $desktop-breakpoint) {
+            position: relative;
+            bottom: 58px;
+            left: 150px;
+        }
+    }
 }
