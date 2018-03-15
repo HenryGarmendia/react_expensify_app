@@ -4,7 +4,7 @@ import createHistory from 'history/createBrowserHistory';
 import AddExpense from '../components/add_expense';
 import ExpenseDashboard from '../components/expense_dashboard';
 import EditExpense from '../components/edit_expense';
-import NotFoundPage from '../components/not_found_page';
+import NotFoundPage from '../components/NotFoundPage';
 import LoginPage from '../components/login_page';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
