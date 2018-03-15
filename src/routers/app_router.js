@@ -5,7 +5,7 @@ import AddExpense from '../components/add_expense';
 import ExpenseDashboard from '../components/expense_dashboard';
 import EditExpense from '../components/edit_expense';
 import NotFoundPage from '../components/NotFoundPage';
-import LoginPage from '../components/login_page';
+import LoginPage from '../components/LoginPage';
 import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 
