@@ -1,9 +1,9 @@
 import React from 'react';
 import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory'; 
-import AddExpense from '../components/add_expense';
-import ExpenseDashboard from '../components/expense_dashboard';
-import EditExpense from '../components/edit_expense';
+import AddExpense from '../components/AddExpense';
+import ExpenseDashboard from '../components/ExpenseDashboard';
+import EditExpense from '../components/EditExpense';
 import NotFoundPage from '../components/NotFoundPage';
 import LoginPage from '../components/LoginPage';
 import PrivateRoute from './PrivateRoute';
