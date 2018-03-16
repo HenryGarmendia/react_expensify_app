@@ -11,7 +11,10 @@ exports[`should render EditExpense 1`] = `
       <h1
         className="page-header__title"
       >
-        Edit Expense
+        <i
+          className="far fa-edit"
+        />
+         Edit Expense
       </h1>
     </div>
   </div>
@@ -34,7 +37,10 @@ exports[`should render EditExpense 1`] = `
       className="button button--secondary"
       onClick={[Function]}
     >
-      Remove
+      <i
+        className="far fa-times-circle"
+      />
+       Remove
     </button>
   </div>
 </div>

@@ -16,14 +16,20 @@ exports[`should render header correctly 1`] = `
         to="/dashboard"
       >
         <h1>
-          💰 Expensify App
+          <i
+            className="fas fa-list"
+          />
+           Expensify App
         </h1>
       </Link>
       <button
         className="button button--link"
         onClick={[Function]}
       >
-        Logout
+        <i
+          className="fas fa-sign-out-alt"
+        />
+         Logout
       </button>
     </div>
   </div>

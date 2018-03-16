@@ -11,7 +11,10 @@ exports[`should render AddExpense correctly 1`] = `
       <h1
         className="page-header__title"
       >
-        Add Expense
+        <i
+          className="fas fa-plus"
+        />
+         Add Expense
       </h1>
     </div>
   </div>

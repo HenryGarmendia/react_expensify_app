@@ -29,7 +29,10 @@ exports[`should correctly render ExpenseSummary with 1 expense 1`] = `
         replace={false}
         to="/create"
       >
-        Add Expense
+        <i
+          className="fas fa-plus"
+        />
+         Add Expense
       </Link>
     </div>
   </div>
@@ -65,7 +68,10 @@ exports[`should correctly render ExpenseSummary with multiple expense 1`] = `
         replace={false}
         to="/create"
       >
-        Add Expense
+        <i
+          className="fas fa-plus"
+        />
+         Add Expense
       </Link>
     </div>
   </div>

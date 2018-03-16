@@ -108,7 +108,10 @@ exports[`should render ExpenseForm correctly 1`] = `
     <button
       className="button"
     >
-      Save Expense
+      <i
+        className="far fa-check-square"
+      />
+       Save Expense
     </button>
   </div>
 </form>
@@ -222,7 +225,10 @@ exports[`should render ExpenseForm correctly with expense data 1`] = `
     <button
       className="button"
     >
-      Save Expense
+      <i
+        className="far fa-check-square"
+      />
+       Save Expense
     </button>
   </div>
 </form>
@@ -336,7 +342,10 @@ exports[`should render error for invalid form submission 1`] = `
     <button
       className="button"
     >
-      Save Expense
+      <i
+        className="far fa-check-square"
+      />
+       Save Expense
     </button>
   </div>
 </form>
@@ -455,7 +464,10 @@ exports[`should render error for invalid form submission 2`] = `
     <button
       className="button"
     >
-      Save Expense
+      <i
+        className="far fa-check-square"
+      />
+       Save Expense
     </button>
   </div>
 </form>
