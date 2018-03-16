@@ -1,5 +1,5 @@
 import React from 'react';
-import ExpenseList from './expense_list';
+import ExpenseList from './ExpenseList';
 import ExpenseListFilters from './ExpenseListFilters';
 import ExpenseSummary from './expense_summary';
 
