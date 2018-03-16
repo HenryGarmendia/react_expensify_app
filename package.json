@@ -1,7 +1,7 @@
 {
   "name": "expensify_web_app",
   "version": "1.0.0",
-  "description": "Simple react exercise",
+  "description": "Simple React app exercise",
   "main": "index.js",
   "scripts": {
     "build:dev": "webpack",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HenryGarmendia/react_indicision.git"
+    "url": "git+https://github.com/HenryGarmendia/react_expensify_app.git",
   },
   "author": "Henry Garmendia",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HenryGarmendia/react_indicision/issues"
+    "url": "https://github.com/HenryGarmendia/react_expensify_app/issues"
   },
-  "homepage": "https://github.com/HenryGarmendia/react_indicision#readme",
+  "homepage": "https://github.com/HenryGarmendia/react_expensify_app#readme",
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
